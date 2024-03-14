@@ -189,3 +189,21 @@ body {
 .home-bottom {
   @apply h1-bold text-center items-center my-96 text-orange-300;
 }
+
+.contacts {
+  @apply overflow-hidden min-h-full text-center mt-20 p-10 mb-40;
+  min-height: calc(100% - 53px - 85px);
+}
+
+.contact-title {
+  @apply h2-bold mt-16
+}
+
+.contact-text {
+  @apply h3-bold mt-4
+}
+
+.catalogue {
+  @apply overflow-hidden min-h-full text-center mt-20 p-10 mb-40;
+  min-height: calc(100% - 53px - 85px);
+}
