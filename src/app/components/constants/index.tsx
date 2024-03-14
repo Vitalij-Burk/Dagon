@@ -5,10 +5,10 @@ export const navLinks = () => [
 ];
 
 export const homeWorksImg = () => [
-  { imgURL: "/home-swing.png", label: "Качели" },
-  { imgURL: "/home-alcove.jpg", label: "Беседки" },
-  { imgURL: "/home-lumber.jpg", label: "Пиломатериалы" },
-  { imgURL: "/home-firewood.jpeg", label: "Дрова" },
+  { imgURL: "/assets/images/home-swing.png", label: "Качели" },
+  { imgURL: "/assets/images/home-alcove.jpg", label: "Беседки" },
+  { imgURL: "/assets/images/home-lumber.jpg", label: "Пиломатериалы" },
+  { imgURL: "/assets/images/home-firewood.jpeg", label: "Дрова" },
 ];
 
 export const stepImg = () => [
