@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Link from "next/link";
 import React from "react";
@@ -7,12 +7,12 @@ import { INavProps } from "@/app/types";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
     <section className="navbar">
       <Link href="/">
-        <h1 className="h3-bold mr-10">TopAdvance</h1>
+        <h1 className="h3-bold mr-10">Дагон</h1>
       </Link>
       <ul className="nav-links">
         {navLinks().map((link: INavProps) => {
@@ -21,12 +21,15 @@ const Navbar = () => {
           return (
             <li key={link.label} className="nav-link">
               <Link href={link.route}>
-                <h4>{ link.label }</h4>
+                <h4 className={`body-medium ${isActive && "text-orange-300"}`}>
+                  {link.label}
+                </h4>
               </Link>
             </li>
           );
         })}
       </ul>
+      <p className="body-bold ml-auto hidden sm:flex">+565254353</p>
     </section>
   );
 };

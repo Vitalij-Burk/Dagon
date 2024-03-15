@@ -3,15 +3,25 @@ import React from "react";
 const Catalogue = () => {
   return (
     <div className="contacts">
-      <h1 className="text-orange-300 h1-bold mb-20">Свяжитесь с нами</h1>
+      <h1 className="text-orange-300 h2-bold sm:h1-bold mb-20">Свяжитесь с нами</h1>
       <div className="contact-data">
         <div className="contact-number">
           <h2 className="contact-title">Наш номер:</h2>
           <h3 className="contact-text">+452498071934</h3>
         </div>
+        <div className="contact-lawyer-address">
+          <h2 className="contact-title">Наш юридический адрес:</h2>
+          <h3 className="contact-text">
+            247768, Гомельская обл., Мозырский р-н., д.Прудок, ул.Колхозная, д.
+            63
+          </h3>
+        </div>
         <div className="contact-address">
-          <h2 className="contact-title">Наш адрес:</h2>
-          <h3 className="contact-text">Минск,Беларусь ул.Ленина 142б</h3>
+          <h2 className="contact-title">Наши адреса:</h2>
+          <h3 className="contact-text">
+            Беларусь, Мозырь, Советская — Торговый павильон
+          </h3>
+          <h3 className="contact-text">Беларусь, Мозырь — Д. Прудок</h3>
         </div>
         <div className="contact-time">
           <h2 className="contact-title">Режим работы:</h2>

@@ -1,15 +1,19 @@
 import Image from "next/image";
-import { Plusses, homeWorksImg, stepImg } from "./components/constants";
-import { IHomeWorksImgProps, IPlussesProps, IStepImgProps } from "./types";
+import { homeWorksImg } from "./components/constants";
+import { IHomeWorksImgProps, IPlussesProps } from "./types";
+import Link from "next/link";
+import CallUs from "./components/shared/CallUs";
+import Steps from "./components/shared/Steps";
+import Plusses from "./components/shared/Plusses";
 
 export default function Home() {
   return (
     <div className="home">
       <div className="home-main">
         <div className="home-main-text">
-          <h1 className="h1-bold">TopAdvance</h1>
+          <h1 className="h2-bold mt-20 sm:mt-0 sm:h1-bold">Фермерское хозяйство "Дагон"</h1>
           <p className="h4-bold mt-20">
-            Мы изготавливаем дрова, пиломатериалы, беседки и качели под заказ
+            Дрова, пиломатериалы, беседки, качели и бани под заказ и в наличии
           </p>
           <p className="h4-bold mt-10">
             Если вы давно хотели купить что-нибудь, чтобы украсить свой участок
@@ -18,71 +22,72 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="home-phone-number">
-        <h2 className="h2-bold">Звоните нам:</h2>
-        <h1 className="h1-bold mt-6">+4594894713</h1>
-      </div>
+      <CallUs />
       <div className="our-works">
         <h2 className="h2-bold">Наши работы:</h2>
         <ul className="our-works-cards">
           {homeWorksImg().map((image: IHomeWorksImgProps) => {
             return (
-              <li key={image.label} className="our-works-card">
-                <Image
-                  src={image.imgURL}
-                  alt="image"
-                  width={250}
-                  height={200}
-                  className="rounded-lg"
-                />
-                <p className="mt-4 body-bold">{image.label}</p>
-              </li>
+              <Link href={image.route}>
+                <li key={image.label} className="our-works-card">
+                  <Image
+                    src={image.imgURL}
+                    alt="image"
+                    width={250}
+                    height={200}
+                    className="rounded-lg"
+                  />
+                  <p className="mt-4 body-bold">{image.label}</p>
+                </li>
+              </Link>
             );
           })}
         </ul>
+        <p className="body-bold mt-10 mx-2 md:mx-48">
+          Мы на рынке уже более 10 лет. За это время у нас уже много довольных
+          клиентов, которые всегда хотят чего-то нового. Мы можем с уверенностью
+          сказать:
+        </p>
+        <h3 className="h3-bold mt-16 text-orange-300">
+          Для нас главное качество!
+        </h3>
       </div>
-      <div className="steps">
-        <h2 className="h2-bold">Как происходит работа:</h2>
-        <ul className="steps-cards">
-          {stepImg().map((step: IStepImgProps) => {
-            return (
-              <li key={step.label} className="step-card">
-                <p className="body-bold">{step.id}</p>
-                <Image
-                  src={step.imgURL}
-                  alt="step"
-                  width={100}
-                  height={100}
-                  className="ml-12 my-4"
-                />
-                <p className="body-bold mb-4">{step.label}</p>
-                <p>{step.text}</p>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+      <Steps />
       <div className="plusses">
-        <h2 className="h2-bold">Плюсы выбрать нас:</h2>
-        <ul className="plusses-cards">
-          {Plusses().map((plus: IPlussesProps) => {
-            return (
-              <li key={plus.label} className="plus-card">
-                <Image
-                  src={plus.imgURL}
-                  alt="plus"
-                  width={100}
-                  height={100}
-                  className=" ml-4 mb-4"
-                />
-                <p className="body-bold">{plus.label}</p>
-              </li>
-            );
-          })}
-        </ul>
+        <Plusses />
         <h2 className="h2-bold text-orange-300 mt-16">
           99% довольных клиентов. Станьте одним из них!
         </h2>
+      </div>
+      <div className="better">
+        <h2 className="mb-16 h2-bold">Мы во всём лучше конкурентов</h2>
+        <div className="better-card">
+          <h3 className="better-type">Наша работа</h3>
+          <Image
+            src="/assets/images/swing-2.jpg"
+            alt="swing"
+            width={800}
+            height={535}
+            className="mx-auto rounded-lg"
+          />
+          <p className="better-price">15000</p>
+        </div>
+        <div className="better-card">
+          <h3 className="better-type">Работа конкурентов</h3>
+          <Image
+            src="/assets/images/concurent-swing.jpg"
+            alt="swing"
+            width={800}
+            height={535}
+            className="mx-auto rounded-lg"
+          />
+          <p className="better-price">25000</p>
+        </div>
+      </div>
+      <div className="to-catalogue">
+        <Link href="/pages/catalogue">
+          <button className="to-catalogue-btn">Переходите в каталог</button>
+        </Link>
       </div>
       <div className="home-bottom">Будем рады работе с вами!</div>
     </div>

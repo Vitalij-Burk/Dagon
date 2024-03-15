@@ -89,7 +89,7 @@ body {
 }
 
 .navbar {
-  @apply flex sticky w-full items-center px-20 h-28;
+  @apply hidden sm:flex sticky w-full items-center px-20 h-28;
 }
 
 .nav-links {
@@ -123,6 +123,30 @@ body {
   color: #a1a1a1;
 }
 
+.footer-title {
+  @apply body-bold;
+}
+
+.footer-lawyer-address {
+  @apply mb-6;
+}
+
+.footer-address {
+  @apply mb-6;
+}
+
+.bottombar {
+  @apply z-50 w-full sticky bottom-0 px-2 py-2 sm:hidden bg-orange-200;
+}
+
+.bottom-links {
+  @apply grid grid-cols-3 justify-items-center;
+}
+
+.bottom-link {
+  @apply rounded-3xl p-3;
+}
+
 .home {
   @apply overflow-hidden min-h-full;
   min-height: calc(100% - 53px - 85px);
@@ -131,23 +155,24 @@ body {
 .home-main {
   background: url(/assets/images/main-img.jpg) no-repeat center;
   background-size: cover;
-  @apply text-center p-24 pb-48 text-white;
+  @apply text-center p-4 md:p-24 pb-48 text-white;
 }
 
-.home-phone-number {
+.call-us {
   @apply text-center items-center justify-center my-20;
 }
 
 .our-works {
-  @apply text-center items-center justify-center mb-20;
+  @apply text-center items-center justify-center mb-28;
 }
 
 .our-works-cards {
-  @apply grid grid-cols-4 justify-center text-center items-center ml-16 mt-16;
+  @apply grid justify-center text-center items-center justify-items-center mt-16 grid-cols-1 sm:grid-cols-3 lg:grid-cols-5;
 }
 
 .our-works-card {
-  @apply text-center max-w-60 p-4 rounded-lg bg-orange-200;
+  @apply text-center max-w-60 p-4 rounded-lg bg-orange-200 mb-12;
+  transition: 0.6s;
 }
 
 .our-works-card:hover {
@@ -159,11 +184,12 @@ body {
 }
 
 .steps-cards {
-  @apply grid grid-cols-4 justify-center text-center items-center ml-20 mt-16;
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center text-center items-center justify-items-center mt-16;
 }
 
 .step-card {
-  @apply text-center max-w-56 h-80 p-4 rounded-lg bg-orange-200 items-center justify-center;
+  @apply text-center max-w-56 h-80 p-4 rounded-lg bg-orange-200 items-center justify-center mb-12 md:mb-0;
+  transition: 0.6s;
 }
 
 .step-card:hover {
@@ -175,11 +201,12 @@ body {
 }
 
 .plusses-cards {
-  @apply grid grid-cols-5 justify-center text-center items-center ml-20 mt-16;
+  @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 justify-center text-center items-center justify-items-center mt-16;
 }
 
 .plus-card {
-  @apply text-center max-w-40 h-56 p-4 rounded-lg bg-orange-200 items-center justify-center;
+  @apply text-center max-w-40 h-56 p-4 rounded-lg bg-orange-200 items-center justify-center mb-12 md:mb-0;
+  transition: 0.6s;
 }
 
 .plus-card:hover {
@@ -196,14 +223,199 @@ body {
 }
 
 .contact-title {
-  @apply h2-bold mt-16
+  @apply h2-bold mt-16;
 }
 
 .contact-text {
-  @apply h3-bold mt-4
+  @apply h3-bold mt-4;
 }
 
 .catalogue {
-  @apply overflow-hidden min-h-full text-center mt-20 p-10 mb-40;
+  @apply overflow-hidden min-h-full text-center mt-16 p-10 mb-40;
   min-height: calc(100% - 53px - 85px);
+}
+
+.catalogue-cards {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-12 justify-center text-center justify-items-center items-center mt-16;
+}
+
+.catalogue-card {
+  @apply text-center max-w-lg p-4 rounded-lg bg-orange-200 justify-center justify-items-center;
+  transition: 0.6s;
+}
+
+.catalogue-card:hover {
+  @apply bg-orange-300;
+}
+
+.swing {
+  @apply overflow-hidden min-h-full text-center mt-16 mb-40;
+  min-height: calc(100% - 53px - 85px);
+}
+
+.swing-head {
+  background: url(/assets/images/home-swing.png) no-repeat center;
+  background-size: cover;
+  @apply text-center p-4 sm:p-32 text-white;
+}
+
+.swing-types {
+  @apply mt-32 mb-40 justify-center items-center text-center;
+}
+
+.materials {
+  @apply mt-32;
+}
+
+.material-cards {
+  @apply grid grid-cols-1 sm:grid-cols-3 gap-12 justify-center text-center items-center justify-items-center mt-16;
+}
+
+.material-card {
+  @apply text-center max-w-72 h-64 p-4 rounded-lg bg-orange-200;
+  transition: 0.6s;
+}
+
+.material-card:hover {
+  @apply bg-orange-300;
+}
+
+.alcove {
+  @apply overflow-hidden min-h-full text-center mt-16 mb-40;
+  min-height: calc(100% - 53px - 85px);
+}
+
+.alcove-head {
+  background: url(/assets/images/home-alcove.jpg) no-repeat center;
+  background-size: cover;
+  @apply text-center p-4 sm:p-32 text-white;
+}
+
+.alcove-types {
+  @apply mt-32 mb-40 justify-center items-center text-center;
+}
+
+.lumber {
+  @apply overflow-hidden min-h-full text-center mt-16 mb-40;
+  min-height: calc(100% - 53px - 85px);
+}
+
+.lumber-head {
+  background: url(/assets/images/home-lumber.jpg) no-repeat center;
+  background-size: cover;
+  @apply text-center p-4 sm:p-32 text-white;
+}
+
+.lumber-kinds {
+  @apply mt-28;
+}
+
+.lumber-kinds-cards {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center text-center items-center justify-items-center mt-16;
+}
+
+.lumber-kinds-card {
+  @apply text-center max-w-56 h-52 p-4 rounded-lg bg-orange-200 items-center justify-center mb-10;
+  transition: 0.6s;
+}
+
+.lumber-kinds-card:hover {
+  @apply bg-orange-300;
+}
+
+.firewood {
+  @apply overflow-hidden min-h-full text-center mt-16 mb-40;
+  min-height: calc(100% - 53px - 85px);
+}
+
+.firewood-head {
+  background: url(/assets/images/firewood-head.jpg) no-repeat center;
+  background-size: cover;
+  @apply text-center p-4 sm:p-32 text-white;
+}
+
+.firewood-kinds {
+  @apply mt-28 mb-20;
+}
+
+.firewood-kinds-cards {
+  @apply grid grid-cols-1 sm:grid-cols-2 justify-center text-center items-center justify-items-center mt-16;
+}
+
+.firewood-kinds-card {
+  @apply text-center max-w-80 max-h-96 p-4 rounded-lg bg-orange-200 items-center justify-center mb-10;
+  transition: 0.6s;
+}
+
+.firewood-kinds-card:hover {
+  @apply bg-orange-300;
+}
+
+.better {
+  @apply text-center p-10 justify-center items-center;
+}
+
+.better-card {
+  @apply mb-20;
+}
+
+.better-price {
+  @apply body-bold mt-4;
+}
+
+.better-type {
+  @apply h3-bold mb-4;
+}
+
+.to-catalogue {
+  @apply justify-center items-center text-center;
+}
+
+.to-catalogue-btn {
+  @apply text-center mx-auto h3-bold p-4 rounded-full bg-orange-300;
+}
+
+.trees {
+  @apply text-center justify-center items-center mt-28;
+}
+
+.trees-cards {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center text-center items-center justify-items-center mt-16;
+}
+
+.trees-card {
+  @apply text-center max-w-56 h-64 p-4 rounded-lg bg-orange-200 items-center justify-center mb-10;
+  transition: 0.6s;
+}
+
+.trees-card:hover {
+  @apply bg-orange-300;
+}
+
+.baths {
+  @apply overflow-hidden min-h-full text-center mt-16 mb-40;
+  min-height: calc(100% - 53px - 85px);
+}
+
+.baths-head {
+  background: url(/assets/images/bath-bochka.jpg) no-repeat center;
+  background-size: cover;
+  @apply text-center p-4 sm:p-32 text-white;
+}
+
+.baths-kinds {
+  @apply mt-28 mb-20;
+}
+
+.baths-kinds-cards {
+  @apply grid grid-cols-1 sm:grid-cols-2 justify-center text-center items-center justify-items-center mt-16;
+}
+
+.baths-kinds-card {
+  @apply text-center max-w-80 max-h-96 p-4 rounded-lg bg-orange-200 items-center justify-center mb-10;
+  transition: 0.6s;
+}
+
+.baths-kinds-card:hover {
+  @apply bg-orange-300;
 }

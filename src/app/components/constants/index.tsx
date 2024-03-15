@@ -1,14 +1,35 @@
 export const navLinks = () => [
-  { route: "/", label: "Главная" },
-  { route: "/pages/catalogue", label: "Каталог" },
-  { route: "/pages/contacts", label: "Контакты" },
+  { route: "/", label: "Главная", imgURL: "/assets/icons/home.svg" },
+  { route: "/pages/catalogue", label: "Каталог", imgURL: "/assets/icons/catalogue.svg" },
+  { route: "/pages/contacts", label: "Контакты", imgURL: "/assets/icons/contact.svg" },
 ];
 
 export const homeWorksImg = () => [
-  { imgURL: "/assets/images/home-swing.png", label: "Качели" },
-  { imgURL: "/assets/images/home-alcove.jpg", label: "Беседки" },
-  { imgURL: "/assets/images/home-lumber.jpg", label: "Пиломатериалы" },
-  { imgURL: "/assets/images/home-firewood.jpeg", label: "Дрова" },
+  {
+    imgURL: "/assets/images/home-swing.png",
+    label: "Качели",
+    route: "/pages/catalogue/swing",
+  },
+  {
+    imgURL: "/assets/images/home-alcove.jpg",
+    label: "Беседки",
+    route: "/pages/catalogue/alcove",
+  },
+  {
+    imgURL: "/assets/images/home-lumber.jpg",
+    label: "Пиломатериалы",
+    route: "/pages/catalogue/lumber",
+  },
+  {
+    imgURL: "/assets/images/home-firewood.jpg",
+    label: "Дрова",
+    route: "/pages/catalogue/firewood",
+  },
+  {
+    imgURL: "/assets/images/bath-bochka.jpg",
+    label: "Бани",
+    route: "/pages/catalogue/baths",
+  },
 ];
 
 export const stepImg = () => [
@@ -38,13 +59,47 @@ export const stepImg = () => [
   },
 ];
 
-export const Plusses = () => [
+export const PlussesCard = () => [
   { imgURL: "/assets/icons/fast.png", label: "Оперативно выполним работу" },
   { imgURL: "/assets/icons/guarantee.png", label: "Гарантируем качество" },
-  { imgURL: "/assets/icons/experience.png", label: "Опыт работы более 10 лет" },
-  { imgURL: "/assets/icons/price.png", label: "Лучшая цена на рынке" },
+  { imgURL: "/assets/icons/experience.png", label: "Опыт работы более 15 лет" },
+  { imgURL: "/assets/icons/design.png", label: "Стильный дизайн" },
   {
     imgURL: "/assets/icons/level.png",
     label: "Выполним работу любой сложности",
   },
+];
+
+export const MaterialCard = () => [
+  { imgURL: "/assets/images/iron.jpg", label: "Только качественный металл" },
+  {
+    imgURL: "/assets/images/adders.jpg",
+    label: "Самые надежные крепежи на рынке",
+  },
+  {
+    imgURL: "/assets/images/lumber.jpg",
+    label: "Дерево собственного производства",
+  },
+];
+
+export const LumberKindCard = () => [
+  { label: "Брус", imgURL: "/assets/images/timber.jpg" },
+  { label: "Брусок", imgURL: "/assets/images/bar.jpg" },
+  { label: "Доска строганная", imgURL: "/assets/images/planed-board.jpg" },
+  { label: "Вагонка", imgURL: "/assets/images/lining.jpg" },
+  { label: "Блок хаус", imgURL: "/assets/images/block-house.jpg" },
+  { label: "Обапол", imgURL: "/assets/images/lagging.jpg" },
+  { label: "Горбыль", imgURL: "/assets/images/croaker.jpg" },
+  { label: "Шпала", imgURL: "/assets/images/sleeper.jpeg" },
+];
+
+export const TreesCard = () => [
+  { label: "Берёза", imgURL: "/assets/images/firewood-bereza.jpg" },
+  { label: "Дуб", imgURL: "/assets/images/firewood-dub.jpeg" },
+  { label: "Осина", imgURL: "/assets/images/firewood-osina.jpg" },
+  { label: "Ольха", imgURL: "/assets/images/firewood-olha.jpg" },
+  { label: "Лиственница", imgURL: "/assets/images/firewood-listvenitsa.jpg" },
+  { label: "Ель", imgURL: "/assets/images/firewood-el.jpeg" },
+  { label: "Сосна", imgURL: "/assets/images/firewood-sosna.jpeg" },
+  { label: "Ясень", imgURL: "/assets/images/firewood-yasen.jpeg" },
 ];
