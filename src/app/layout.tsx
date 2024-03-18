@@ -7,7 +7,7 @@ import Bottombar from "./components/shared/Bottombar";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: {
     absolute: "Дагон",
     default: "Дагон. Пиломатериалы, дрова, бани, беседки, качели в наличии и под заказ",
