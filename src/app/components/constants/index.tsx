@@ -1,12 +1,20 @@
 export const navLinks = () => [
   { route: "/", label: "Главная", imgURL: "/assets/icons/home.svg" },
-  { route: "/pages/catalogue", label: "Каталог", imgURL: "/assets/icons/catalogue.svg" },
-  { route: "/pages/contacts", label: "Контакты", imgURL: "/assets/icons/contact.svg" },
+  {
+    route: "/pages/catalogue",
+    label: "Каталог",
+    imgURL: "/assets/icons/catalogue.svg",
+  },
+  {
+    route: "/pages/contacts",
+    label: "Контакты",
+    imgURL: "/assets/icons/contact.svg",
+  },
 ];
 
 export const homeWorksImg = () => [
   {
-    imgURL: "/assets/images/home-swing.png",
+    imgURL: "/assets/images/swing-4.jpeg",
     label: "Качели",
     route: "/pages/catalogue/swing",
   },
@@ -71,7 +79,6 @@ export const PlussesCard = () => [
 ];
 
 export const MaterialCard = () => [
-  { imgURL: "/assets/images/iron.jpg", label: "Только качественный металл" },
   {
     imgURL: "/assets/images/adders.jpg",
     label: "Самые надежные крепежи на рынке",
@@ -103,3 +110,16 @@ export const TreesCard = () => [
   { label: "Сосна", imgURL: "/assets/images/firewood-sosna.jpeg" },
   { label: "Ясень", imgURL: "/assets/images/firewood-yasen.jpeg" },
 ];
+
+export const SwingWork = () => [
+  {imgURL: "/assets/images/swing-work-1.jpeg"},
+  {imgURL: "/assets/images/swing-work-2.jpeg"},
+  {imgURL: "/assets/images/swing-work-3.jpeg"},
+  {imgURL: "/assets/images/swing-work-4.jpeg"},
+  {imgURL: "/assets/images/swing-work-5.jpeg"},
+  {imgURL: "/assets/images/swing-work-6.jpeg"},
+  {imgURL: "/assets/images/swing-work-7.jpeg"},
+  {imgURL: "/assets/images/swing-work-8.jpeg"},
+  {imgURL: "/assets/images/swing-work-9.jpeg"},
+  {imgURL: "/assets/images/swing-work-10.jpeg"},
+]

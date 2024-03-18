@@ -1,4 +1,9 @@
 import React from "react";
+import { Metadata } from "next";
+
+export const matadata: Metadata = {
+  title: "Контакты",
+};
 
 const Catalogue = () => {
   return (

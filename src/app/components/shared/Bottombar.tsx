@@ -22,7 +22,7 @@ const Bottombar = () => {
               className={`bottom-link ${isActive && "bg-orange-300"}`}
             >
               <Link href={link.route}>
-                <Image src={link.imgURL} alt="image" width={35} height={35} />
+                <Image src={link.imgURL} alt={link.label} width={25} height={25} />
               </Link>
             </li>
           );

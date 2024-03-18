@@ -6,6 +6,11 @@ import Trees from "@/app/components/shared/Trees";
 import { ILumberKindsProps } from "@/app/types";
 import Image from "next/image";
 import React from "react";
+import { Metadata } from "next";
+
+export const matadata: Metadata = {
+  title: "Пиломатериалы",
+};
 
 const Lumber = () => {
   return (
@@ -24,7 +29,7 @@ const Lumber = () => {
               <li key={card.label} className="lumber-kinds-card">
                 <Image
                   src={card.imgURL}
-                  alt="kind"
+                  alt={card.label}
                   width={200}
                   height={150}
                   className="rounded-lg"

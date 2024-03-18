@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { homeWorksImg } from "./components/constants";
-import { IHomeWorksImgProps, IPlussesProps } from "./types";
+import { IHomeWorksImgProps } from "./types";
 import Link from "next/link";
 import CallUs from "./components/shared/CallUs";
 import Steps from "./components/shared/Steps";
@@ -11,7 +11,9 @@ export default function Home() {
     <div className="home">
       <div className="home-main">
         <div className="home-main-text">
-          <h1 className="h2-bold mt-20 sm:mt-0 sm:h1-bold">Фермерское хозяйство "Дагон"</h1>
+          <h1 className="h2-bold mt-20 sm:mt-0 sm:h1-bold">
+            Фермерское хозяйство "Дагон"
+          </h1>
           <p className="h4-bold mt-20">
             Дрова, пиломатериалы, беседки, качели и бани под заказ и в наличии
           </p>
@@ -32,7 +34,7 @@ export default function Home() {
                 <li key={image.label} className="our-works-card">
                   <Image
                     src={image.imgURL}
-                    alt="image"
+                    alt={image.label}
                     width={250}
                     height={200}
                     className="rounded-lg"
@@ -44,7 +46,7 @@ export default function Home() {
           })}
         </ul>
         <p className="body-bold mt-10 mx-2 md:mx-48">
-          Мы на рынке уже более 10 лет. За это время у нас уже много довольных
+          Мы на рынке уже более 15 лет. За это время у нас уже много довольных
           клиентов, которые всегда хотят чего-то нового. Мы можем с уверенностью
           сказать:
         </p>
@@ -64,21 +66,21 @@ export default function Home() {
         <div className="better-card">
           <h3 className="better-type">Наша работа</h3>
           <Image
-            src="/assets/images/swing-2.jpg"
+            src="/assets/images/swing-3.jpeg"
             alt="swing"
             width={800}
             height={535}
             className="mx-auto rounded-lg"
           />
-          <p className="better-price">15000</p>
+          <p className="better-price">25000</p>
         </div>
         <div className="better-card">
           <h3 className="better-type">Работа конкурентов</h3>
           <Image
-            src="/assets/images/concurent-swing.jpg"
+            src="/assets/images/swing-concurent.jpeg"
             alt="swing"
-            width={800}
-            height={535}
+            width={400}
+            height={335}
             className="mx-auto rounded-lg"
           />
           <p className="better-price">25000</p>

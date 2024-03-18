@@ -13,7 +13,7 @@ const Plusses = () => {
             <li key={plus.label} className="plus-card">
               <Image
                 src={plus.imgURL}
-                alt="plus"
+                alt={plus.label}
                 width={100}
                 height={100}
                 className=" ml-4 mb-4"

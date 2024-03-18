@@ -36,3 +36,7 @@ export type ITreesProps = {
   imgURL: string
   label: string
 }
+
+export type IWorkProps = {
+  imgURL: string
+}

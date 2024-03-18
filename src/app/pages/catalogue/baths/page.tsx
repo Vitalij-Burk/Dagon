@@ -4,6 +4,11 @@ import Plusses from '@/app/components/shared/Plusses';
 import Steps from '@/app/components/shared/Steps';
 import Image from 'next/image';
 import React from 'react'
+import { Metadata } from "next";
+
+export const matadata: Metadata = {
+  title: "Бани",
+};
 
 const Baths = () => {
   return (

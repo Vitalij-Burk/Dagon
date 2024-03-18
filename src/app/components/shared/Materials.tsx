@@ -13,10 +13,10 @@ const Materials = () => {
             <li key={card.label} className="material-card">
               <Image
                 src={card.imgURL}
-                alt="material"
-                width={250}
-                height={200}
-                className=" rounded-lg ml-1"
+                alt={card.label}
+                width={450}
+                height={400}
+                className=" rounded-lg"
               />
               <p className="body-bold mt-2">{card.label}</p>
             </li>

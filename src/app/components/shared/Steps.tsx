@@ -14,7 +14,7 @@ const Steps = () => {
               <p className="body-bold">{step.id}</p>
               <Image
                 src={step.imgURL}
-                alt="step"
+                alt={step.label}
                 width={100}
                 height={100}
                 className="ml-12 my-4"

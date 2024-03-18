@@ -144,7 +144,7 @@ body {
 }
 
 .bottom-link {
-  @apply rounded-3xl p-3;
+  @apply rounded-full p-3;
 }
 
 .home {
@@ -254,13 +254,30 @@ body {
 }
 
 .swing-head {
-  background: url(/assets/images/home-swing.png) no-repeat center;
+  @apply text-center p-4 sm:p-32 relative;
+}
+
+.swing-head::before {
+  content: "";
+  background: url(/assets/images/swing-3.jpeg) no-repeat center;
   background-size: cover;
-  @apply text-center p-4 sm:p-32 text-white;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .swing-types {
   @apply mt-32 mb-40 justify-center items-center text-center;
+}
+
+.swing-work {
+  @apply justify-center items-center text-center mb-24;
 }
 
 .materials {
@@ -268,11 +285,11 @@ body {
 }
 
 .material-cards {
-  @apply grid grid-cols-1 sm:grid-cols-3 gap-12 justify-center text-center items-center justify-items-center mt-16;
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-12 justify-center text-center items-center justify-items-center mt-16 mx-4;
 }
 
 .material-card {
-  @apply text-center max-w-72 h-64 p-4 rounded-lg bg-orange-200;
+  @apply text-center  p-4 rounded-lg bg-orange-200;
   transition: 0.6s;
 }
 
@@ -286,9 +303,22 @@ body {
 }
 
 .alcove-head {
+  @apply text-center p-4 sm:p-32 relative;
+}
+
+.alcove-head::before {
+  content: "";
   background: url(/assets/images/home-alcove.jpg) no-repeat center;
   background-size: cover;
-  @apply text-center p-4 sm:p-32 text-white;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .alcove-types {
@@ -301,9 +331,22 @@ body {
 }
 
 .lumber-head {
+  @apply text-center p-4 sm:p-32 relative;
+}
+
+.lumber-head::before {
+  content: "";
   background: url(/assets/images/home-lumber.jpg) no-repeat center;
   background-size: cover;
-  @apply text-center p-4 sm:p-32 text-white;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .lumber-kinds {
@@ -329,9 +372,22 @@ body {
 }
 
 .firewood-head {
-  background: url(/assets/images/firewood-head.jpg) no-repeat center;
+  @apply text-center p-4 sm:p-32 relative;
+}
+
+.firewood-head::before {
+  content: "";
+  background: url(/assets/images/home-firewood.jpg) no-repeat center;
   background-size: cover;
-  @apply text-center p-4 sm:p-32 text-white;
+  opacity: 0.4;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .firewood-kinds {
@@ -418,4 +474,12 @@ body {
 
 .baths-kinds-card:hover {
   @apply bg-orange-300;
+}
+
+.work-cards {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 justify-center text-center items-center justify-items-center mt-16;
+}
+
+.work-card {
+  @apply text-center max-w-80 max-h-96 rounded-lg items-center justify-center mb-10;
 }

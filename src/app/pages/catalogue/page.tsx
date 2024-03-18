@@ -3,11 +3,16 @@ import { IHomeWorksImgProps } from "@/app/types";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Metadata } from "next";
+
+export const matadata: Metadata = {
+  title: "Каталог",
+};
 
 const Catalogue = () => {
   return (
     <div className="catalogue">
-      <h1 className="h1-bold mb-20">Каталог</h1>
+      <h1 className="h2-bold sm:h1-bold mb-20">Каталог</h1>
       <ul className="catalogue-cards">
         {homeWorksImg().map((image: IHomeWorksImgProps) => {
           return (
@@ -15,7 +20,7 @@ const Catalogue = () => {
               <li key={image.label} className="catalogue-card">
                 <Image
                   src={image.imgURL}
-                  alt="image"
+                  alt={image.label}
                   width={500}
                   height={400}
                   className="rounded-lg"

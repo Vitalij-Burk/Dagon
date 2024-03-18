@@ -1,15 +1,20 @@
-import CallUs from '@/app/components/shared/CallUs'
-import Materials from '@/app/components/shared/Materials';
-import Plusses from '@/app/components/shared/Plusses';
-import Steps from '@/app/components/shared/Steps'
-import Image from 'next/image';
-import React from 'react'
+import CallUs from "@/app/components/shared/CallUs";
+import Materials from "@/app/components/shared/Materials";
+import Plusses from "@/app/components/shared/Plusses";
+import Steps from "@/app/components/shared/Steps";
+import Image from "next/image";
+import React from "react";
+import { Metadata } from "next";
+
+export const matadata: Metadata = {
+  title: "Беседки",
+};
 
 const Alcove = () => {
   return (
     <div className="alcove">
       <div className="alcove-head">
-        <h1 className="h1-bold mb-28">Беседки</h1>
+        <h1 className="h2-bold sm:h1-bold mt-12 sm:mt-0 mb-28">Беседки</h1>
         <p className="h4-bold">
           Беседки из дерева в наличии и под заказ по вашим размерам
         </p>
@@ -44,6 +49,6 @@ const Alcove = () => {
       <div className="home-bottom">Будем рады работе с вами!</div>
     </div>
   );
-}
+};
 
-export default Alcove
+export default Alcove;

@@ -11,7 +11,7 @@ const Trees = () => {
         {TreesCard().map((card: ITreesProps) => {
           return (
             <li key={card.label} className='trees-card'>
-              <Image src={card.imgURL} alt='tree' width={200} height={200} className=' rounded-lg' />
+              <Image src={card.imgURL} alt={card.label} width={200} height={200} className=' rounded-lg' />
               <p className='body-bold mt-3'>{card.label}</p>
             </li>
           )

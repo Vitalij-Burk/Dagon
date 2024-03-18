@@ -4,6 +4,11 @@ import Steps from "@/app/components/shared/Steps";
 import Trees from "@/app/components/shared/Trees";
 import Image from "next/image";
 import React from "react";
+import { Metadata } from "next";
+
+export const matadata: Metadata = {
+  title: "Дрова",
+};
 
 const Firewood = () => {
   return (
