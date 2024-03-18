@@ -8,9 +8,11 @@ import { Metadata } from "next";
 import { SwingWork } from "@/app/components/constants";
 import { IWorkProps } from "@/app/types";
 
-export const matadata: Metadata = {
+const metadata: Metadata = {
   title: "Качели",
 };
+
+export { metadata }
 
 const Swing = () => {
   return (

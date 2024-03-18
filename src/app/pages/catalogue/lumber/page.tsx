@@ -8,9 +8,11 @@ import Image from "next/image";
 import React from "react";
 import { Metadata } from "next";
 
-export const matadata: Metadata = {
+const metadata: Metadata = {
   title: "Пиломатериалы",
 };
+
+export { metadata }
 
 const Lumber = () => {
   return (

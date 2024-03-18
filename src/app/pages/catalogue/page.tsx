@@ -5,9 +5,12 @@ import Link from "next/link";
 import React from "react";
 import { Metadata } from "next";
 
-export const matadata: Metadata = {
+const metadata: Metadata = {
   title: "Каталог",
+  keywords: "Каталог, Пиломатериалы, Качели, Дрова, Бани, Беседки, Беларусь"
 };
+
+export { metadata }
 
 const Catalogue = () => {
   return (

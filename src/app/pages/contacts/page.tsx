@@ -1,9 +1,11 @@
 import React from "react";
 import { Metadata } from "next";
 
-export const matadata: Metadata = {
+const metadata: Metadata = {
   title: "Контакты",
 };
+
+export { metadata }
 
 const Catalogue = () => {
   return (

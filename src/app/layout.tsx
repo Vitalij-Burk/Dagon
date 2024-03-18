@@ -10,11 +10,14 @@ const inter = Inter({ subsets: ["latin"] });
 const metadata: Metadata = {
   title: {
     absolute: "Дагон",
-    default: "Дагон. Пиломатериалы, дрова, бани, беседки, качели в наличии и под заказ",
+    default: "Дагон. Пиломатериалы, дрова, бани, беседки, качели в наличии и под заказ в Беларуси",
     template: "%s | Дагон",
   },
   description: "Фермерское хозяйство 'Дагон'",
+  keywords: "Дагон, Беларусь, Пиломатериалы, Доставка, Дрова, Бани, Беседки, Качели"
 };
+
+export { metadata }
 
 export default function RootLayout({
   children,
