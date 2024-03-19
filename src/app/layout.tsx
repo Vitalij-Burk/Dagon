@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/shared/Navbar";
 import Footer from "./components/shared/Footer";
 import Bottombar from "./components/shared/Bottombar";
+import BottomHappy from "./components/shared/BottomHappy";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,6 +39,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         {children}
+        
         <Footer />
         <Bottombar />
       </body>

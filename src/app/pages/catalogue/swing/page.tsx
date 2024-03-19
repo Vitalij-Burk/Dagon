@@ -7,6 +7,7 @@ import React from "react";
 import { Metadata } from "next";
 import { SwingWork } from "@/app/components/constants";
 import { IWorkProps } from "@/app/types";
+import BottomHappy from "@/app/components/shared/BottomHappy";
 
 const metadata: Metadata = {
   title: "Качели",
@@ -34,7 +35,7 @@ const Swing = () => {
             alt="swing"
             width={800}
             height={535}
-            className=" mx-auto mt-10 rounded-lg"
+            className="type-img"
           />
         </div>
       </div>
@@ -52,7 +53,7 @@ const Swing = () => {
       </div>
       <Plusses />
       <Materials />
-      <div className="home-bottom">Будем рады работе с вами!</div>
+      <BottomHappy />
     </div>
   );
 };

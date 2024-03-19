@@ -5,6 +5,7 @@ import Link from "next/link";
 import CallUs from "./components/shared/CallUs";
 import Steps from "./components/shared/Steps";
 import Plusses from "./components/shared/Plusses";
+import BottomHappy from "./components/shared/BottomHappy";
 
 export default function Home() {
   return (
@@ -91,7 +92,7 @@ export default function Home() {
           <button className="to-catalogue-btn">Переходите в каталог</button>
         </Link>
       </div>
-      <div className="home-bottom">Будем рады работе с вами!</div>
+      <BottomHappy />
     </div>
   );
 }

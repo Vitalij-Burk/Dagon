@@ -167,7 +167,7 @@ body {
 }
 
 .our-works-cards {
-  @apply grid justify-center text-center items-center justify-items-center mt-16 grid-cols-1 sm:grid-cols-3 lg:grid-cols-5;
+  @apply grid justify-center text-center items-center justify-items-center mt-16 grid-cols-1 sm:grid-cols-3 2xl:grid-cols-6;
 }
 
 .our-works-card {
@@ -176,7 +176,7 @@ body {
 }
 
 .our-works-card:hover {
-  @apply bg-orange-300;
+  @apply bg-orange-300 cursor-pointer;
 }
 
 .steps {
@@ -193,7 +193,7 @@ body {
 }
 
 .step-card:hover {
-  @apply bg-orange-300;
+  @apply bg-orange-300 cursor-pointer;
 }
 
 .plusses {
@@ -201,7 +201,7 @@ body {
 }
 
 .plusses-cards {
-  @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 justify-center text-center items-center justify-items-center mt-16;
+  @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 justify-center text-center items-center justify-items-center mt-16;
 }
 
 .plus-card {
@@ -210,10 +210,10 @@ body {
 }
 
 .plus-card:hover {
-  @apply bg-orange-300;
+  @apply bg-orange-300 cursor-pointer;
 }
 
-.home-bottom {
+.bottom {
   @apply h1-bold text-center items-center my-96 text-orange-300;
 }
 
@@ -245,7 +245,7 @@ body {
 }
 
 .catalogue-card:hover {
-  @apply bg-orange-300;
+  @apply bg-orange-300 cursor-pointer;
 }
 
 .swing {
@@ -294,7 +294,7 @@ body {
 }
 
 .material-card:hover {
-  @apply bg-orange-300;
+  @apply bg-orange-300 cursor-pointer;
 }
 
 .alcove {
@@ -308,7 +308,7 @@ body {
 
 .alcove-head::before {
   content: "";
-  background: url(/assets/images/home-alcove.jpg) no-repeat center;
+  background: url(/assets/images/alcove-3.jpeg) no-repeat center;
   background-size: cover;
   opacity: 0.5;
   position: absolute;
@@ -323,6 +323,42 @@ body {
 
 .alcove-types {
   @apply mt-32 mb-40 justify-center items-center text-center;
+}
+
+.alcove-work {
+  @apply justify-center items-center text-center mb-24;
+}
+
+.slide {
+  @apply overflow-hidden min-h-full text-center mt-16 mb-40;
+  min-height: calc(100% - 53px - 85px);
+}
+
+.slide-head {
+  @apply text-center p-4 sm:p-32 relative;
+}
+
+.slide-head::before {
+  content: "";
+  background: url(/assets/images/slide-4.jpeg) no-repeat center;
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-types {
+  @apply mt-32 mb-40 justify-center items-center text-center;
+}
+
+.slide-work {
+  @apply justify-center items-center text-center mb-24;
 }
 
 .lumber {
@@ -350,7 +386,7 @@ body {
 }
 
 .lumber-kinds {
-  @apply mt-28;
+  @apply mt-28 mx-3;
 }
 
 .lumber-kinds-cards {
@@ -363,7 +399,7 @@ body {
 }
 
 .lumber-kinds-card:hover {
-  @apply bg-orange-300;
+  @apply bg-orange-300 cursor-pointer;
 }
 
 .firewood {
@@ -404,7 +440,7 @@ body {
 }
 
 .firewood-kinds-card:hover {
-  @apply bg-orange-300;
+  @apply bg-orange-300 cursor-pointer;
 }
 
 .better {
@@ -429,6 +465,11 @@ body {
 
 .to-catalogue-btn {
   @apply text-center mx-auto h3-bold p-4 rounded-full bg-orange-300;
+  transition: 0.6s;
+}
+
+.to-catalogue-btn:hover {
+  @apply p-5 bg-orange-400;
 }
 
 .trees {
@@ -445,7 +486,7 @@ body {
 }
 
 .trees-card:hover {
-  @apply bg-orange-300;
+  @apply bg-orange-300 cursor-pointer;
 }
 
 .baths {
@@ -473,13 +514,26 @@ body {
 }
 
 .baths-kinds-card:hover {
-  @apply bg-orange-300;
+  @apply bg-orange-300 cursor-pointer;
 }
 
 .work-cards {
   @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 justify-center text-center items-center justify-items-center mt-16;
 }
 
+.work-cards-4 {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center text-center items-center justify-items-center mt-16;
+}
+
 .work-card {
-  @apply text-center max-w-80 max-h-96 rounded-lg items-center justify-center mb-10;
+  @apply text-center rounded-lg items-center justify-center mb-10;
+  transition: 0.6s;
+}
+
+.work-card:hover {
+  @apply opacity-60 cursor-pointer;
+}
+
+.type-img {
+  @apply mx-auto mt-10 rounded-lg;
 }

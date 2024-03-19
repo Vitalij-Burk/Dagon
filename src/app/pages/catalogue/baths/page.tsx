@@ -5,6 +5,7 @@ import Steps from '@/app/components/shared/Steps';
 import Image from 'next/image';
 import React from 'react'
 import { Metadata } from "next";
+import BottomHappy from '@/app/components/shared/BottomHappy';
 
 const metadata: Metadata = {
   title: "Бани",
@@ -50,7 +51,7 @@ const Baths = () => {
       </div>
       <Plusses />
       <Materials />
-      <div className="home-bottom">Будем рады работе с вами!</div>
+      <BottomHappy />
     </div>
   );
 }

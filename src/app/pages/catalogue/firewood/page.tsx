@@ -5,6 +5,7 @@ import Trees from "@/app/components/shared/Trees";
 import Image from "next/image";
 import React from "react";
 import { Metadata } from "next";
+import BottomHappy from "@/app/components/shared/BottomHappy";
 
 const metadata: Metadata = {
   title: "Дрова",
@@ -51,7 +52,7 @@ const Firewood = () => {
       </div>
       <Plusses />
       <Trees />
-      <div className="home-bottom">Будем рады работе с вами!</div>
+      <BottomHappy />
     </div>
   );
 };

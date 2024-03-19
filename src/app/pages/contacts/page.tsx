@@ -1,5 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
+import BottomHappy from "@/app/components/shared/BottomHappy";
 
 const metadata: Metadata = {
   title: "Контакты",
@@ -10,7 +11,9 @@ export { metadata }
 const Catalogue = () => {
   return (
     <div className="contacts">
-      <h1 className="text-orange-300 h2-bold sm:h1-bold mb-20">Свяжитесь с нами</h1>
+      <h1 className="text-orange-300 h2-bold sm:h1-bold mb-20">
+        Свяжитесь с нами
+      </h1>
       <div className="contact-data">
         <div className="contact-number">
           <h2 className="contact-title">Наш номер:</h2>
@@ -35,6 +38,7 @@ const Catalogue = () => {
           <h3 className="contact-text">7:00 - 17:00, ПН - ПТ</h3>
         </div>
       </div>
+      <BottomHappy />
     </div>
   );
 };

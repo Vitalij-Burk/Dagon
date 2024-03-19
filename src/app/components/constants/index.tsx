@@ -19,7 +19,7 @@ export const homeWorksImg = () => [
     route: "/pages/catalogue/swing",
   },
   {
-    imgURL: "/assets/images/home-alcove.jpg",
+    imgURL: "/assets/images/alcove-head.jpeg",
     label: "Беседки",
     route: "/pages/catalogue/alcove",
   },
@@ -37,6 +37,11 @@ export const homeWorksImg = () => [
     imgURL: "/assets/images/bath-bochka.jpg",
     label: "Бани",
     route: "/pages/catalogue/baths",
+  },
+  {
+    imgURL: "/assets/images/slide-head.jpeg",
+    label: "Горки",
+    route: "/pages/catalogue/slide",
   },
 ];
 
@@ -72,6 +77,7 @@ export const PlussesCard = () => [
   { imgURL: "/assets/icons/guarantee.png", label: "Гарантируем качество" },
   { imgURL: "/assets/icons/experience.png", label: "Опыт работы более 15 лет" },
   { imgURL: "/assets/icons/design.png", label: "Стильный дизайн" },
+  { imgURL: "/assets/icons/delivery.png", label: "Быстрая доставка" },
   {
     imgURL: "/assets/icons/level.png",
     label: "Выполним работу любой сложности",
@@ -112,14 +118,33 @@ export const TreesCard = () => [
 ];
 
 export const SwingWork = () => [
-  {imgURL: "/assets/images/swing-work-1.jpeg"},
-  {imgURL: "/assets/images/swing-work-2.jpeg"},
-  {imgURL: "/assets/images/swing-work-3.jpeg"},
-  {imgURL: "/assets/images/swing-work-4.jpeg"},
-  {imgURL: "/assets/images/swing-work-5.jpeg"},
-  {imgURL: "/assets/images/swing-work-6.jpeg"},
-  {imgURL: "/assets/images/swing-work-7.jpeg"},
-  {imgURL: "/assets/images/swing-work-8.jpeg"},
-  {imgURL: "/assets/images/swing-work-9.jpeg"},
-  {imgURL: "/assets/images/swing-work-10.jpeg"},
-]
+  { imgURL: "/assets/images/swing-work-1.jpeg" },
+  { imgURL: "/assets/images/swing-work-2.jpeg" },
+  { imgURL: "/assets/images/swing-work-3.jpeg" },
+  { imgURL: "/assets/images/swing-work-4.jpeg" },
+  { imgURL: "/assets/images/swing-work-5.jpeg" },
+  { imgURL: "/assets/images/swing-work-6.jpeg" },
+  { imgURL: "/assets/images/swing-work-7.jpeg" },
+  { imgURL: "/assets/images/swing-work-8.jpeg" },
+  { imgURL: "/assets/images/swing-work-9.jpeg" },
+  { imgURL: "/assets/images/swing-work-10.jpeg" },
+];
+
+export const AlcoveWork = () => [
+  { imgURL: "/assets/images/alcove-1.jpeg" },
+  { imgURL: "/assets/images/alcove-2.jpeg" },
+  { imgURL: "/assets/images/alcove-3.jpeg" },
+  { imgURL: "/assets/images/alcove-4.jpeg" },
+  { imgURL: "/assets/images/alcove-5.jpeg" },
+];
+
+export const SlideWork = () => [
+  { imgURL: "/assets/images/slide-1.jpeg" },
+  { imgURL: "/assets/images/slide-2.jpeg" },
+  { imgURL: "/assets/images/slide-3.jpeg" },
+  { imgURL: "/assets/images/slide-4.jpeg" },
+  { imgURL: "/assets/images/slide-5.jpeg" },
+  { imgURL: "/assets/images/slide-6.jpeg" },
+  { imgURL: "/assets/images/slide-7.jpeg" },
+  { imgURL: "/assets/images/slide-8.jpeg" },
+];
