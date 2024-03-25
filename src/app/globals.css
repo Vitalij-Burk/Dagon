@@ -249,7 +249,7 @@ body {
 }
 
 .swing {
-  @apply overflow-hidden min-h-full text-center mt-16 mb-40;
+  @apply overflow-hidden min-h-full text-center mt-16 mb-0 sm:mb-40;
   min-height: calc(100% - 53px - 85px);
 }
 
@@ -298,7 +298,7 @@ body {
 }
 
 .alcove {
-  @apply overflow-hidden min-h-full text-center mt-16 mb-40;
+  @apply overflow-hidden min-h-full text-center mt-16 mb-0 sm:mb-40;
   min-height: calc(100% - 53px - 85px);
 }
 
@@ -330,7 +330,7 @@ body {
 }
 
 .slide {
-  @apply overflow-hidden min-h-full text-center mt-16 mb-40;
+  @apply overflow-hidden min-h-full text-center mt-16 mb-0 sm:mb-40;
   min-height: calc(100% - 53px - 85px);
 }
 
@@ -362,7 +362,7 @@ body {
 }
 
 .lumber {
-  @apply overflow-hidden min-h-full text-center mt-16 mb-40;
+  @apply overflow-hidden min-h-full text-center mt-16 mb-0 sm:mb-40;
   min-height: calc(100% - 53px - 85px);
 }
 
@@ -403,7 +403,7 @@ body {
 }
 
 .firewood {
-  @apply overflow-hidden min-h-full text-center mt-16 mb-40;
+  @apply overflow-hidden min-h-full text-center mt-16 mb-0 sm:mb-40;
   min-height: calc(100% - 53px - 85px);
 }
 
@@ -490,7 +490,7 @@ body {
 }
 
 .baths {
-  @apply overflow-hidden min-h-full text-center mt-16 mb-40;
+  @apply overflow-hidden min-h-full text-center mt-16 mb-0 sm:mb-40;
   min-height: calc(100% - 53px - 85px);
 }
 
