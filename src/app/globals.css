@@ -109,7 +109,7 @@ body {
 }
 
 .footer-content {
-  @apply p-10;
+  @apply p-4 sm:p-10;
   background: #dfdfdf;
 }
 
@@ -214,11 +214,11 @@ body {
 }
 
 .bottom {
-  @apply h1-bold text-center items-center my-96 text-orange-300;
+  @apply h2-bold sm:h1-bold text-center items-center my-40 md:my-96 text-orange-300;
 }
 
 .contacts {
-  @apply overflow-hidden min-h-full text-center mt-20 p-10 mb-40;
+  @apply overflow-hidden min-h-full text-center mt-20 p-10 mb-0 sm:mb-40;
   min-height: calc(100% - 53px - 85px);
 }
 
@@ -258,7 +258,7 @@ body {
 }
 
 .swing-head::before {
-  content: "";
+  content: '';
   background: url(/assets/images/swing-3.jpeg) no-repeat center;
   background-size: cover;
   opacity: 0.5;
@@ -307,7 +307,7 @@ body {
 }
 
 .alcove-head::before {
-  content: "";
+  content: '';
   background: url(/assets/images/alcove-3.jpeg) no-repeat center;
   background-size: cover;
   opacity: 0.5;
@@ -339,7 +339,7 @@ body {
 }
 
 .slide-head::before {
-  content: "";
+  content: '';
   background: url(/assets/images/slide-4.jpeg) no-repeat center;
   background-size: cover;
   opacity: 0.5;
@@ -371,7 +371,7 @@ body {
 }
 
 .lumber-head::before {
-  content: "";
+  content: '';
   background: url(/assets/images/home-lumber.jpg) no-repeat center;
   background-size: cover;
   opacity: 0.5;
@@ -412,7 +412,7 @@ body {
 }
 
 .firewood-head::before {
-  content: "";
+  content: '';
   background: url(/assets/images/home-firewood.jpg) no-repeat center;
   background-size: cover;
   opacity: 0.4;
