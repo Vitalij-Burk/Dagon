@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
-import { navLinks } from "../constants";
+import { navLinks, phoneNumber, publicPhoneNumber } from "../constants";
 import { INavProps } from "@/app/types";
 import { usePathname } from "next/navigation";
 
@@ -29,7 +29,7 @@ const Navbar = () => {
           );
         })}
       </ul>
-      <p className="body-bold ml-auto hidden sm:flex">+565254353</p>
+      <a href={`tel:${phoneNumber}`} className="body-bold ml-auto hidden sm:flex">{publicPhoneNumber}</a>
     </section>
   );
 };
