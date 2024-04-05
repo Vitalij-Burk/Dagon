@@ -62,31 +62,6 @@ export default function Home() {
           99% довольных клиентов. Станьте одним из них!
         </h2>
       </div>
-      <div className="better">
-        <h2 className="mb-16 h2-bold">Мы во всём лучше конкурентов</h2>
-        <div className="better-card">
-          <h3 className="better-type">Наша работа</h3>
-          <Image
-            src="/assets/images/swing-3.jpeg"
-            alt="swing"
-            width={800}
-            height={535}
-            className="mx-auto rounded-lg"
-          />
-          <p className="better-price">25000</p>
-        </div>
-        <div className="better-card">
-          <h3 className="better-type">Работа конкурентов</h3>
-          <Image
-            src="/assets/images/swing-concurent.jpeg"
-            alt="swing"
-            width={400}
-            height={335}
-            className="mx-auto rounded-lg"
-          />
-          <p className="better-price">25000</p>
-        </div>
-      </div>
       <div className="to-catalogue">
         <Link href="/pages/catalogue">
           <button className="to-catalogue-btn">Переходите в каталог</button>

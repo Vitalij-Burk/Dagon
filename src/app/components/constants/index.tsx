@@ -154,3 +154,22 @@ export const phoneNumber = 8095095452;
 export const publicPhoneNumber = +453824572384;
 
 export const whatsappAddress = 'https://wa.me/349857329485';
+
+export const SocialImages = () => [
+  {
+    imgURL: '/assets/icons/whatsapp.png',
+    route: 'https://wa.me/349857329485',
+  },
+  {
+    imgURL: '/assets/icons/telegram.png',
+    route: 'https://wa.me/349857329485',
+  },
+  {
+    imgURL: '/assets/icons/instagram.png',
+    route: 'https://wa.me/349857329485',
+  },
+  {
+    imgURL: '/assets/icons/viber.png',
+    route: 'https://wa.me/349857329485',
+  },
+];

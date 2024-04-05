@@ -6,7 +6,7 @@ const CallUs = () => {
   return (
     <div className='call-us'>
       <h2 className='h3-bold sm:h2-bold'>Звоните нам:</h2>
-      <a href={`tel:${phoneNumber}`} className='h2-bold sm:h1-bold mt-6 mb-6'>
+      <a href={`tel:${phoneNumber}`} className='h2-bold sm:h1-bold mt-8 mb-6'>
         {publicPhoneNumber}
       </a>
       <h2 className='h3-bold sm:h2-bold mt-8'>И пишите в WhatsApp:</h2>

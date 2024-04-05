@@ -3,10 +3,13 @@ import { Metadata } from 'next';
 import BottomHappy from '@/app/components/shared/BottomHappy';
 import Image from 'next/image';
 import {
+  SocialImages,
   phoneNumber,
   publicPhoneNumber,
   whatsappAddress,
 } from '@/app/components/constants';
+import Link from 'next/link';
+import { ISocialProps } from '@/app/types';
 
 const metadata: Metadata = {
   title: 'Контакты',
@@ -23,19 +26,28 @@ const Catalogue = () => {
       <div className='contact-data'>
         <div className='contact-number'>
           <h2 className='contact-title'>Наш номер:</h2>
-          <a href={`tel:${phoneNumber}`} className='contact-text'>
-            {publicPhoneNumber}
+          <a href={`tel:${phoneNumber}`}>
+            <p className='contact-text'>{publicPhoneNumber}</p>
           </a>
-          <h2 className='contact-title'>WhatsApp:</h2>
-          <a href={whatsappAddress}>
-            <Image
-              src='/assets/icons/whatsapp.png'
-              alt='whatsapp'
-              width={120}
-              height={120}
-              className='mx-auto mt-6'
-            />
-          </a>
+          <div className='footer-call-us'>
+            <h4 className=' contact-title'>А также написать:</h4>
+            <ul className='contact-socials'>
+              {SocialImages().map((social: ISocialProps) => {
+                return (
+                  <Link href={social.route}>
+                    <li className='contact-social'>
+                      <Image
+                        src={social.imgURL}
+                        alt='image'
+                        height={70}
+                        width={70}
+                      />
+                    </li>
+                  </Link>
+                );
+              })}
+            </ul>
+          </div>
         </div>
         <div className='contact-lawyer-address'>
           <h2 className='contact-title'>Наш юридический адрес:</h2>

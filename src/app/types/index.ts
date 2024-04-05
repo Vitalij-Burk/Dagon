@@ -40,3 +40,8 @@ export type ITreesProps = {
 export type IWorkProps = {
   imgURL: string
 }
+
+export type ISocialProps = {
+  imgURL: string
+  route: string
+}

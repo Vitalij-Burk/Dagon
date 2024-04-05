@@ -1,11 +1,20 @@
 import React from 'react';
-import { phoneNumber, publicPhoneNumber, whatsappAddress } from '../constants';
+import {
+  SocialImages,
+  phoneNumber,
+  publicPhoneNumber,
+  whatsappAddress,
+} from '../constants';
 import Image from 'next/image';
+import Form from './Form';
+import { ISocialProps } from '@/app/types';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
     <footer className='footer'>
       <div className='footer-content'>
+        <Form />
         <iframe
           src='https://yandex.ru/map-widget/v1/?um=constructor%3A8daebbf8e28f153c1825c26af164cfbca26f981904467a1b867ac5b02076087d&amp;source=constructor'
           className=' h-96 mr-10 rounded-xl w-full'
@@ -33,15 +42,28 @@ const Footer = () => {
             <a href={`tel:${phoneNumber}`}>{publicPhoneNumber}</a>
           </div>
           <div className='footer-call-us'>
-            <h4 className=' body-bold'>А также написать в WhatsApp:</h4>
-            <a href={whatsappAddress}>
-              <Image
-                src='/assets/icons/whatsapp.png'
-                alt='whatsapp'
-                width={30}
-                height={30}
-                className='mt-2'
-              />
+            <h4 className=' body-bold'>А также написать:</h4>
+            <ul className='footer-socials'>
+              {SocialImages().map((social: ISocialProps) => {
+                return (
+                  <Link href={social.route}>
+                    <li className='footer-social'>
+                      <Image
+                        src={social.imgURL}
+                        alt='image'
+                        height={20}
+                        width={20}
+                      />
+                    </li>
+                  </Link>
+                );
+              })}
+            </ul>
+          </div>
+          <div className='footer-call-us'>
+            <h4 className=' body-bold'>Наша почта</h4>
+            <a href='mailto:rek.goncharenko@gmail.com'>
+              rek.goncharenko@gmail.com
             </a>
           </div>
           <div className='footer-operating-mode'>

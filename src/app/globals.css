@@ -23,6 +23,22 @@ body {
   min-height: 100vh;
 }
 
+body::-webkit-scrollbar {
+  @apply w-3;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-md;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -135,6 +151,14 @@ body {
   @apply mb-6;
 }
 
+.footer-socials {
+  @apply flex mt-1;
+}
+
+.footer-social {
+  @apply mr-3;
+}
+
 .bottombar {
   @apply z-50 w-full sticky bottom-0 px-2 py-2 sm:hidden bg-orange-200;
 }
@@ -218,7 +242,7 @@ body {
 }
 
 .contacts {
-  @apply overflow-hidden min-h-full text-center mt-20 p-10 mb-0 sm:mb-40;
+  @apply overflow-hidden min-h-full text-center mt-20 pt-10;
   min-height: calc(100% - 53px - 85px);
 }
 
@@ -228,6 +252,14 @@ body {
 
 .contact-text {
   @apply h3-bold mt-4;
+}
+
+.contact-socials {
+  @apply mx-auto flex items-center justify-center mt-4;
+}
+
+.contact-social {
+  @apply mx-3;
 }
 
 .catalogue {
@@ -536,4 +568,21 @@ body {
 
 .type-img {
   @apply mx-auto mt-10 rounded-lg;
+}
+
+.form-wrapper {
+  @apply mx-6 mt-6 sm:mx-16 sm:mt-16 items-center justify-center mx-auto block text-center mb-24;
+}
+
+.form-input {
+  @apply block mx-auto m-3 rounded-lg w-2/3 p-3;
+}
+
+.form-button {
+  @apply w-40 bg-orange-300 p-3 rounded-full body-bold;
+  transition: 0.6s;
+}
+
+.form-button:hover {
+  @apply bg-orange-400;
 }
